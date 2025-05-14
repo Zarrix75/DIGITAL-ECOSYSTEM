@@ -1,0 +1,42 @@
+from flask import Flask, jsonify
+
+app = Flask(__name__)
+
+@app.route('/custom_data.json')
+def custom_data():
+    data = [
+        {
+            "name": "Inception",
+            "description": "A mind-bending thriller about dreams within dreams.",
+            "specifications": {
+                "director": "Christopher Nolan",
+                "year": 2010,
+                "duration": "148 minutes"
+            },
+            "tags": ["sci-fi", "thriller", "dreams"]
+        },
+        {
+            "name": "The Matrix",
+            "description": "A computer hacker discovers reality is a simulation.",
+            "specifications": {
+                "director": "The Wachowskis",
+                "year": 1999,
+                "duration": "136 minutes"
+            },
+            "tags": ["sci-fi", "action", "AI"]
+        },
+        {
+            "name": "Interstellar",
+            "description": "A journey through space and time to save humanity.",
+            "specifications": {
+                "director": "Christopher Nolan",
+                "year": 2014,
+                "duration": "169 minutes"
+            },
+            "tags": ["space", "time", "science"]
+        }
+    ]
+    return jsonify(data)
+
+if __name__ == '__main__':
+    app.run(debug=True)
