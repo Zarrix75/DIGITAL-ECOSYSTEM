@@ -4,8 +4,8 @@ url = "https://zarrix75.github.io/DIGITAL-ECOSYSTEM/custom_data.json"
 
 try:
     response = requests.get(url)
-    response.raise_for_status()
-    data = response.json()
+    response.raise_for_status()  # Vérifie si l'URL a bien été trouvée
+    data = response.json()  # Récupère les données au format JSON
     print("Données récupérées avec succès :")
     print(data)
 except requests.exceptions.RequestException as e:
