@@ -1,5 +1,16 @@
 import requests
 
+url = "https://zarrix75.github.io/DIGITAL-ECOSYSTEM/custom_data.json"
+
+try:
+    response = requests.get(url)
+    response.raise_for_status()
+    data = response.json()
+    print("Données récupérées avec succès :")
+    print(data)
+except requests.exceptions.RequestException as e:
+    print(f"Erreur lors de la récupération des données : {e}")
+
 def fetch_json_data(url):
     try:
         response = requests.get(url)
@@ -20,6 +31,6 @@ def display_movies(movies):
         print("-" * 40)
 
 if __name__ == "__main__":
-    url = "https://github.com/Zarrix75/DIGITAL-ECOSYSTEM.git/custom_data.json"
+    url = "https://zarrix75.github.io/DIGITAL-ECOSYSTEM/custom_data.json"
     data = fetch_json_data(url)
     display_movies(data)
