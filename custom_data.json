@@ -7,6 +7,42 @@
         "genre": "Science Fiction"
       },
       "tags": ["thriller", "sci-fi", "dream"]
+    },
+    {
+      "name": "The Matrix",
+      "description": "A groundbreaking science fiction film.",
+      "specifications": {
+        "year": 1999,
+        "genre": "Action"
+      },
+      "tags": ["action", "sci-fi", "revolution"]
+    },
+    {
+      "name": "The Dark Knight",
+      "description": "The second film in Christopher Nolan's Batman trilogy.",
+      "specifications": {
+        "year": 2008,
+        "genre": "Action"
+      },
+      "tags": ["action", "superhero", "thriller"]
+    },
+    {
+      "name": "Barbie",
+      "description": "A fun and colorful adventure following Barbie in a magical world.",
+      "specifications": {
+        "year": 2023,
+        "genre": "Animation"
+      },
+      "tags": ["animation", "family", "fantasy"]
+    },
+    {
+      "name": "The Lion King",
+      "description": "A young lion prince overcomes tragedy to claim his destiny.",
+      "specifications": {
+        "year": 1994,
+        "genre": "Animation"
+      },
+      "tags": ["animation", "family", "drama"]
     }
   ]
   
